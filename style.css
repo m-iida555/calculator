@@ -1,0 +1,45 @@
+.cal-outline{
+  width: 500px;
+  height: 200px;
+  border: 10px solid #bfbfbf;
+  border-radius: 10px;
+}
+
+.cal-element{
+  display: block;
+  width: 400px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#cal-disp{
+  width: 410px;
+  height: 25px;
+  background-color: #000;
+  border: none;
+}
+
+.cal-key-outline{
+  width: auto;
+  height: 25px;
+  white-space: nowrap;
+}
+
+.key-button{
+  width: 100px;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #bfbfbf;
+  text-align: center;
+}
+
+.key-button + .key-button{
+  margin: 0;
+}
+
+.key-button.bottom{
+  width: 200px;
+}
+

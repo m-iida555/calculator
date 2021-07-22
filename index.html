@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="style.css">
+        <title>電卓</title>
+      </head>
+      
+      <body>
+        <div class="cal-outline"><!-- display:block;  -->
+          <div class="cal-element">      
+            <input type="text" id="cal-disp" value="">
+            <div class="cal-key-outline"><!-- cla-key-outlineの中身にはdisplay:flex; -->
+              <input type="button" class="key-button" value="7" onclick="key(7)">
+              <input type="button" class="key-button" value="8" onclick="key(8)">
+              <input type="button" class="key-button" value="9" onclick="key(9)">
+              <input type="button" class="key-button" value="+" onclick="key('+')">
+            </div>
+            <div class="cal-key-outline"><!-- cla-key-outlineの中身にはdisplay:flex; -->
+              <input type="button" class="key-button" value="4" onclick="key(4)">
+              <input type="button" class="key-button" value="5" onclick="key(5)">
+              <input type="button" class="key-button" value="6" onclick="key(6)">
+              <input type="button" class="key-button" value="-" onclick="key('-')">
+            </div>
+            <div class="cal-key-outline"><!-- cla-key-outlineの中身にはdisplay:flex; -->
+              <input type="button" class="key-button" value="1" onclick="key(1)">
+              <input type="button" class="key-button" value="2" onclick="key(2)">
+              <input type="button" class="key-button" value="3" onclick="key(3)">
+              <input type="button" class="key-button" value="*" onclick="key('*')">
+            </div>
+            <div class="cal-key-outline"><!-- cla-key-outlineの中身にはdisplay:flex; -->
+              <input type="button" class="key-button" value="0" onclick="key(0)">
+              <input type="button" class="key-button" value="00" onclick="key('00')">
+              <input type="button" class="key-button" value="." onclick="key('.')">
+              <input type="button" class="key-button" value="/" onclick="key('/')">
+            </div>
+            <div class="cal-key-outline"><!-- cla-key-outlineの中身にはdisplay:flex; -->
+              <input type="button" class="key-button bottom" value="AC" onclick="reset()">
+              <input type="button" class="key-button bottom" value="=" onclick="enter()">
+            </div>
+          </div>  
+        </div>
+        <script src="style.js"></script>
+      </body>
+    </html>
